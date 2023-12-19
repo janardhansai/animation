@@ -1,0 +1,33 @@
+.box1{animation: rotate 3s infinite;}
+
+@keyframes rotate{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+
+.box2{animation: pulse 2s infinite;}
+
+@keyframes pulse{
+    0%,100%{transform: scale(1);}
+    50%{transform: scale(1.2);}
+}
+
+.box3{animation: slidein 2s infinite;}
+@keyframes slidein{
+    0%{transform: translate(-50%);}
+    50%{transform: translateX(0);}
+    100%{transform: translateX(50%);}
+}
+
+.box4{ animation: bouncingLoader 2s infinite;}
+@keyframes bouncingLoader{
+     0%{transform: translate3d(0);}
+    50%{transform: translate3d(0,-1rem,0);}
+}
+
+.box5{animation: bounce 2s infinite; }
+@keyframes bounce{
+     0%{transform: translate(0);}
+    50%{transform: translateX(-20px);}
+    100%{transform: translateX(-10px);}
+}

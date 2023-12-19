@@ -1,0 +1,98 @@
+<html>
+<head>
+    <title>Box Animation</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Animation</title>
+    </head>
+<body>
+    <div class="navbar">
+    <a class="active" href="#"><i class="fa fa-f fa-home"></i>Home</a>
+        <a class="active" href="#"><i class="fa fa-f fa-search"></i>Search</a>
+        <a class="active" href="#"><i class="fa fa-f fa-envelope"></i>Contact</a>
+        <a class="active" href="#"><i class="fa fa-f fa-user"></i>Login</a>
+    </div>
+<br>
+    
+        <center>
+            <div class="box1" style="width: 100px; height: 100px; background-color: palevioletred; border-radius: 35px;"></div>
+        <br><div class="box2" style="width: 100px; height: 100px; background-color: orchid; border-radius: 35px;"></div>
+        <br><div class="box3" style="width: 100px; height: 100px; background-color: paleturquoise; border-radius: 35px;"></div>
+        <br><div class="box4" style="width: 100px; height: 100px; background-color: peru; border-radius: 35px;"></div>
+        <br><div class="box5" style="width: 100px; height: 100px; background-color: palegreen; border-radius: 35px;"></div>
+        </center>
+    </body>
+ 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        #container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            animation: rotateImage 4s linear infinite;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            animation: fadeIn 2s linear infinite;
+        }
+
+        @keyframes rotateImage {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(100deg);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 10;
+            }
+        }
+        .navbar{
+    width: 100%;
+    background-color: black;
+    overflow: auto;
+}
+
+.navbar a{
+float: left;
+padding: 12px;
+color:white;
+text-decoration: none;
+ font-size: 15px;
+}
+
+.navbar a:hover{
+    background-color: black;
+}
+.active{
+    background-color:palevioletred;
+}
+    </style>
+    <div id="container">
+        <img src="download%20(1).jpg" alt="Example Image">
+        <p>I'm Janardhan Sai from Eluru Andhra Pradesh  I have done graduation in Pydah college of engineering Kakinada under JNTUK.
+        My Family memebers are four ,previously i worked in Non It Organisation.I have skills in Excel sheets and Linux operating System .
+        My Hobbies are Playing Cricket and watching Movies.</p>
+    </div>
+</html>
